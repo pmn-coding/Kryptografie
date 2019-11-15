@@ -23,7 +23,6 @@ def caesar(w, key):
     for c in w:
         if c in sp:
             vs += ""
-            print("True")
         else:
             if c == " ":
                 vs += "°"       #Mit dem ° Zeichen werden Leerzeichen markiert wenn nicht gewünscht einfach anstatt dieser Zeile folgendes einsetzen: vs += ""
