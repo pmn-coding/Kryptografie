@@ -1,7 +1,7 @@
 #brute force - 4 stelliger zahlencode
 
 geheim = input("Zu Entschlüsselnder Text: ").upper()
-
+file = open("test.txt", "w")
 for p in range(1000,10000):
     key = p
     
@@ -48,5 +48,8 @@ for p in range(1000,10000):
                 nm = chr(m)
                 es += nm
                 count = 1
-    print("Schlüssel: ",key)
-    print("Entschlüsselt: ",es)
+    text = "Schlüssel: "+ str(key) + " "
+    text2 = "Entschlüsselt: " + str(es)+ "\n"
+    file.write(text)
+    file.write(text2)
+file.close()
